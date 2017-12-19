@@ -17,10 +17,7 @@
 	return "Mi nombre es: ".$nombre;
 });
 */
-Route::('/','FrontController@index');
-Route::('/','FrontController@contac');
-Route::('/','FrontController@register');
+Route::resource('/','FrontController');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+

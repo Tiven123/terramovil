@@ -23,10 +23,9 @@
         <!--se crea una barra de navegacion-->
         <nav class="nav ">
             <ul class="nav nav-tabs bg-info">
-                <li role="presentation" class="active"><a href="index.html">Inicio</a></li>
-                <li><a href="info.html">Quienes Somos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="usuarios.html">Registarse</a></li>
+                <li role="presentation" class="active"><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contac</a></li>
+                <li><a href="user.html">Register</a></li>
             </ul>
         </nav>
     </div>
@@ -39,16 +38,16 @@
                     <form class="form-horizontal">
                         <div class="form-group">
                             <!--Campos de Usuario-->
-                            <label for="usuario">Usuario:</label>
-                            <INPUT type=text class="form-control" id="usuario" placeholder="Usuario o Correo" />
+                            <label for="lblUser">User:</label>
+                            <INPUT type=text class="form-control" id="txtUser" placeholder="User" />
                         </div>
                         <div class="form-group">
                             <!--Campos de Contraseña-->
-                            <label for="contrasena">Contrase&ntilde;a:</label>
-                            <input type="password" class="form-control" id="contrasenna" value="" placeholder="Contrase&ntilde;a" />
+                            <label for="lblPassword">Password:</label>
+                            <input type="password" class="form-control" id="txtPassword" value="" placeholder="Password" />
                         </div>
                         <!--Boton de login-->
-                        <input class="btn btn-primary" type="button" id="boton-login" value="Ingresar" />
+                        <input class="btn btn-primary" type="button" id="btnlLgin" value="Login" />
                         <br><br>
                     </form>
                 </article>
@@ -56,7 +55,7 @@
                 </article>
                 <!--Aside con la texto-->
                 <aside class="col-xs-12 col-sm-3 text-justify">
-                    <p> Bienvenido a el sito Web oficial de Terramovil Florencia, gracias por visitarmos si tiene alguna duda o sugerencia favor comunicarse al numero 24 75 52 29.
+                    <p> Welcome to the official website of Terramovil Florence, thanks for visiting, yes you have it, doubt or suggestion, please to the number 24 75 52 29.
                     </p>
                 </aside>
             </section>
@@ -65,9 +64,9 @@
     <footer>
         <!--pie de pagina-->
         <div class="container text-center">
-            <p>Direccion: Florencia centro, frente a Importadora Monge, detras de la parada de autobuses.</p>
-            <p>Telefono: 2475 - 5229</p>
-            <p>Derechos Reservados &copy; 2017</p>
+            <p>Address: Florence center, in front of Importadora Monge, behind the bus stop.</p>
+            <p>Phone Number: 2475 - 5229</p>
+            <p>All rights reserved &copy; 2017</p>
         </div>
     </footer>
 
