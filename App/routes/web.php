@@ -10,7 +10,13 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+//Route::get('prueba','PruebaController@index');
+//Route::resource('hola','HolaController');
 
+/*Route::get('nombre/{nombre}',function($nombre){
+	return "Mi nombre es: ".$nombre;
+});
+*/
 Route::get('/', function () {
     return view('welcome');
 });
