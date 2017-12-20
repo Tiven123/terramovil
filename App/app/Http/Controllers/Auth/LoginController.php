@@ -4,6 +4,9 @@ namespace terramovil\Http\Controllers\Auth;
 
 use terramovil\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\Redirect;
+use terramovil\Http\Request\LoginFormRequest;
+use DB;
 
 class LoginController extends Controller
 {

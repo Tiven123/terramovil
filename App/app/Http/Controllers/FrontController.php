@@ -18,12 +18,11 @@ class FrontController extends Controller
 
     public function contac()
     {
-        //
-    }
+        return view('contac');    }
 
     public function register()
     {
-        //
+        return view('register');
     }
 
 

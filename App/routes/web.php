@@ -18,6 +18,9 @@
 });
 */
 Route::resource('/','FrontController');
+Route::get('/contac','FrontController@contac');
+//Route::get('/register','FrontController@register');
 
+Route::resource('user','UserController');
 
 

@@ -4,7 +4,7 @@ namespace terramovil\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class LoginFormRequest extends FormRequest
+class UserFormRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,8 +24,14 @@ class LoginFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'user'=>'required|max:50',
-            'password'=>'max:256',
+            'identi'=>'required|max:15',
+            'name'=>'required|max:255',
+            'last_name'=>'required|max:255',
+            'user_name'=>'required|max:20',
+            'password'=>'required|max:255',
+            'email'=>'required|max:30',
+            'adress'=>'required|max:255',
+            'celphone'=>'required|max:20',
         ];
     }
 }

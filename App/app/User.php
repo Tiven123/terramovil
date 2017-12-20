@@ -3,11 +3,21 @@
 namespace terramovil;
 
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Auth\Authenticatable;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Auth\Password\CanResetPassword;
 
-class User extends Authenticatable
+class User extends Model
 {
-    use Notifiable;
+    //use Authenticatable, CanResetPassword, Notifiable;
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var string
+     */
+    protected $table = 'users';
+
 
     /**
      * The attributes that are mass assignable.
@@ -15,7 +25,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'identi','name', 'last_name', 'user_name', 'password','email', 'adress','celphone','type',
     ];
 
     /**
