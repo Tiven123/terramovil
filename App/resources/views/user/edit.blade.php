@@ -72,6 +72,13 @@
                         </div>
                     </div>
                 {!!Form::close()!!}
+                {!!Form::open(['route'=> ['user.destroy', $user->id],'method'=>'DELETE'])!!}
+                <div class="form-group">
+                        <div class="text-center">
+                        {!!Form::submit('Delete',['class'=>'btn btn-danger'])!!}
+                        </div>
+                    </div>
+                {!!Form::close()!!}
             </div>
 
             <div class=".col-xl-4 .col-lg-4 .col-md-4 .col-sm-12 .col-xs-12">

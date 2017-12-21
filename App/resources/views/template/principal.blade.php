@@ -22,9 +22,9 @@
         <!--se crea una barra de navegacion-->
         <nav class="nav ">
             <ul class="nav nav-tabs bg-info">
-                <li role="presentation" class="active"><a href="index.html">Home</a></li>
-                <li><a href="contact.html">Contac</a></li>
-                <li><a href="user.html">Register</a></li>
+                <li role="presentation" class="active"><a href={!!URL::to('/')!!}>Home</a></li>
+                <li><a href={!!URL::to('/contac')!!}>Contac</a></li>
+                <li><a href={!!URL::to('/user')!!}>Register</a></li>
             </ul>
         </nav>
     </div> 
