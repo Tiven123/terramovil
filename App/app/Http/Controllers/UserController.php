@@ -3,7 +3,9 @@
 namespace terramovil\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use terramovil\User;
+use Session;
+use Redirect;
 class UserController extends Controller
 {
     /**
@@ -13,7 +15,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users = \terramovil\User::All();
+        $users = User::All();
         return view('user.index',compact('users'));
     }
 
@@ -35,7 +37,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {   
-        \terramovil\User::create([
+        User::create([
             'identi'=>$request['identi'],
             'name'=>$request['name'],
             'last_name'=>$request['last_name'],
@@ -46,7 +48,7 @@ class UserController extends Controller
             'celphone'=>$request['celphone'],
             'type'=>'Admin',
             ]);
-        return redirect('/user')->with('message','ok');
+        return redirect('/user')->with('message','register of user successful');
     }
 
     /**
@@ -68,7 +70,8 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        $user = User::find($id);
+        return view('user.edit',['user'=>$user]);
     }
 
     /**
@@ -80,7 +83,11 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $user = User::find($id);
+        $user->fill($request->all());
+        $user->save();
+        Session::flash('User edit');
+        return Redirect::to('/user');
     }
 
     /**

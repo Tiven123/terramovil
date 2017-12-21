@@ -5,10 +5,9 @@
     <!--se le asigna el nombre de la pagina-->
     <title>Terramovil Florencia</title>
     <!--referencia a estilo de bootstrap-->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.css">
-    <!--refencia a estilos personalizados-->
-    <link rel="stylesheet" href="css/estilos.css">
+    {!!Html::style('css/bootstrap.css')!!}
+    {!!Html::style('css/bootstrap-theme.css')!!}
+    {!!Html::style('css/estilos.csss')!!}
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 
